@@ -1,0 +1,87 @@
+    //TypeWriter Sim
+    //Created by Brandon Sovran
+    //All Rights Reserved
+
+    /* PLACE AT TOP OF FILE
+    
+    //Java Imports
+    import java.io.*;
+    import java.util.*;
+    //JFrame Imports
+    import java.awt.*;
+    import java.awt.event.*;
+    import javax.swing.*;
+    
+    */
+    
+    /* PLACE IN MAIN CLASS
+    
+    //Used for JFrame Only
+    /*
+    JFrame frame = new JFrame("Riddle Me This"); //JFrame Name
+    // Add a window listner for close button
+    frame.addWindowListener(new WindowAdapter() {
+
+    public void windowClosing(WindowEvent e) {
+      System.exit(0);
+    }
+    });
+    // This is an empty content area in the frame
+    JTextArea jTextArea = new JTextArea(); //Create Jtext
+    frame.add( jTextArea );
+    frame.setPreferredSize(new Dimension(800, 300)); //Size
+    frame.getContentPane().add(jTextArea, BorderLayout.CENTER); //Add Jtext
+    frame.pack();
+    frame.setVisible(true); //Visible
+    jTextArea.setBorder(BorderFactory.createEmptyBorder(20,10,10,10)); 
+    //Change Font
+    Font font2 = new Font("Courier New", Font.BOLD, 12);
+    jTextArea.setFont(font2);
+    */
+    
+    //Used to Change the Number of Lines Used
+    int n = 1;
+    int numberOfLines = 6; //Must be 1 more than final Line #
+    
+    //The Array of Strings to Print Out
+    String[] line = new String[numberOfLines];
+    
+    //Change these String to WHatever you Want!
+    line[1] = "Hello Line[1]";
+    line[2] = "Hello Line[2]";
+    line[3] = "Hello Line[3]";
+    line[4] = "";
+    line[5] = "Hello Line[5]";
+    //Increment the Number [n] every new line created
+    
+    //Loop to Print the Strings
+    while (n<numberOfLines) {
+      
+    //Loop to Print Each Letter
+    for (int i = 0; i < line[n].length(); i++) {
+      
+      //Stop Before Typing Out Each Letter
+      Thread.sleep(80);
+      
+      //Console Program
+      //System.out.print(line[n].charAt(i));
+      
+      //JFrame Program
+      //String a_letter = Character.toString(line[n].charAt(i));
+      //jTextArea.append(a_letter);
+    }
+    
+    Thread.sleep(700);
+    //Console Program
+    //System.out.println();
+    
+    //JFrame Program
+    //jTextArea.append("\n");
+    
+    ++n;//Increment the Line Number
+    
+    }
+    
+    */
+    
+    
