@@ -1,20 +1,20 @@
-    //TypeWriter Sim
-    //Created by Brandon Sovran
-    //All Rights Reserved
-
-    /* PLACE AT TOP OF FILE
+//TypeWriter Sim
+//Created by Brandon Sovran
+//All Rights Reserved
     
-    //Java Imports
-    import java.io.*;
-    import java.util.*;
-    //JFrame Imports
-    import java.awt.*;
-    import java.awt.event.*;
-    import javax.swing.*;
-    
-    */
-    
-    /* PLACE IN MAIN CLASS
+//Java Imports
+import java.io.*;
+import java.util.*;
+//JFrame Imports
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+   
+//Start of class TypeWriter
+public class TypeWriter {
+ 
+ //Start of main void
+ public static void main(String arg[]) throws IOException, InterruptedException{
     
     //Used for JFrame Only
     /*
@@ -81,7 +81,6 @@
     ++n;//Increment the Line Number
     
     }
-    
-    */
-    
+  }
+}
     
