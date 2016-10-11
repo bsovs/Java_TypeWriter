@@ -1,7 +1,7 @@
 //TypeWriter Sim
 //Created by Brandon Sovran
-//All Rights Reserved
-    
+//All rights reserved, 2016
+
 //Java Imports
 import java.io.*;
 import java.util.*;
@@ -9,16 +9,16 @@ import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-   
-//Start of class TypeWriter
+
+//Start of Class TypeWriter
 public class TypeWriter {
- 
- //Start of main void
- public static void main(String arg[]) throws IOException, InterruptedException{
+  
+  //Start of main void
+  public static void main(String arg[]) throws IOException, InterruptedException{
     
     //Used for JFrame Only
     /*
-    JFrame frame = new JFrame("Riddle Me This"); //JFrame Name
+    JFrame frame = new JFrame("Riddle Me This");
     // Add a window listner for close button
     frame.addWindowListener(new WindowAdapter() {
 
@@ -50,7 +50,7 @@ public class TypeWriter {
     line[1] = "Hello Line[1]";
     line[2] = "Hello Line[2]";
     line[3] = "Hello Line[3]";
-    line[4] = "";
+    line[4] = "Period. New Sentance, Comma Stop";
     line[5] = "Hello Line[5]";
     //Increment the Number [n] every new line created
     
@@ -64,16 +64,26 @@ public class TypeWriter {
       Thread.sleep(80);
       
       //Console Program
-      //System.out.print(line[n].charAt(i));
+      System.out.print(line[n].charAt(i));
       
       //JFrame Program
       //String a_letter = Character.toString(line[n].charAt(i));
       //jTextArea.append(a_letter);
+      
+      if (line[n].charAt(i) == '.') {
+        Thread.sleep(320);
+      }
+      else if (line[n].charAt(i) == ',') {
+        Thread.sleep(170);
+      }
+      
     }
     
+    //Sleep after each line
     Thread.sleep(700);
+    
     //Console Program
-    //System.out.println();
+    System.out.println();
     
     //JFrame Program
     //jTextArea.append("\n");
@@ -81,6 +91,7 @@ public class TypeWriter {
     ++n;//Increment the Line Number
     
     }
-  }
-}
     
+  }
+  
+}   
